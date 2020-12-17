@@ -1,0 +1,8 @@
+Steps to execute question 2
+
+1. create cluster on AWS EMR
+2. after the cluster is up and running, add following arguments
+
+	spark-submit --deploy-mode client --class SocialNetworkGraphX s3://assignment3-part2-bigdata/socialnetworkgraphx_2.11-0.1.jar s3://assignment3-part2-bigdata/com-amazon.ungraph.txt s3://assignment3-part2-bigdata/Outputs/
+	
+3. Once the files are executed, check the output directory mentioned in the arguments above to find the outputs of 5 questions

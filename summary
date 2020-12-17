@@ -1,0 +1,27 @@
+Network was collected by crawling Amazon website. It is based on Customers Who Bought This Item Also Bought feature of the Amazon website. If a product i is frequently co-purchased with product j, the graph contains a directed edge from i to j.
+
+Dataset statistics:
+Nodes	403394
+Edges	3387388
+Nodes in largest WCC	403364 (1.000)
+Edges in largest WCC	3387224 (1.000)
+Nodes in largest SCC	395234 (0.980)
+Edges in largest SCC	3301092 (0.975)
+Average clustering coefficient	0.4177
+Number of triangles	3986507
+Fraction of closed triangles	0.06206
+Diameter (longest shortest path)	21
+90-percentile effective diameter	7.6
+
+A list of all vertices has been obtained by combining the distinct node ids from "FromNodeId" and "ToNodeId" columns.
+Edges or relationships are established based on data. A Graph is formed using these vertices and edges.
+
+outdegree - in this case, nodes with highest outdegree indicate a variety of products are co-purchased with this specific product
+
+indegree - in this case, node with highest indegree indicate it is the most co-purschased item with other products
+
+pagerank - indicates the combination of products that are most frequently co-purchased
+
+connected components - through this, we can approximate clusters and every component is labelled
+
+triangle count - this indicates a mutual co-purchasing relationship among products.
